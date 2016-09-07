@@ -12,9 +12,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBOutlet weak var imagePickerView: UIImageView!
 
-    @IBAction func pickAnImage(sender: AnyObject) {
+    @IBAction func pickAnImageFromAlbum(sender: AnyObject) {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
+        imagePickerController.sourceType = .PhotoLibrary
+        presentViewController(imagePickerController, animated: true, completion: nil)
+    }
+
+    @IBAction func pickAnImageFromCamera(sender: AnyObject) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .Camera
         presentViewController(imagePickerController, animated: true, completion: nil)
     }
 
