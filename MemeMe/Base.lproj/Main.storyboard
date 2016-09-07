@@ -21,9 +21,16 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKi-GO-UbN">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="Pick" id="QM1-h4-cNF"/>
+                                    <barButtonItem title="Pick" id="QM1-h4-cNF">
+                                        <connections>
+                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="wSi-36-zko"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-wA-qeZ">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -32,6 +39,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cKi-GO-UbN" secondAttribute="bottom" id="TYx-Ns-jpl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imagePickerView" destination="Xhi-wA-qeZ" id="JuV-mB-lk7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
