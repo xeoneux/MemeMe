@@ -12,6 +12,7 @@
 		843AE8C91D7FDA9F006FF580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843AE8C71D7FDA9F006FF580 /* Main.storyboard */; };
 		843AE8CB1D7FDA9F006FF580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843AE8CA1D7FDA9F006FF580 /* Assets.xcassets */; };
 		843AE8CE1D7FDA9F006FF580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843AE8CC1D7FDA9F006FF580 /* LaunchScreen.storyboard */; };
+		844B5C351D80B12C00161A5F /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B5C341D80B12C00161A5F /* Meme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		843AE8CA1D7FDA9F006FF580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843AE8CD1D7FDA9F006FF580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843AE8CF1D7FDA9F006FF580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844B5C341D80B12C00161A5F /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				843AE8C31D7FDA9F006FF580 /* AppDelegate.swift */,
 				843AE8C51D7FDA9F006FF580 /* ViewController.swift */,
+				844B5C341D80B12C00161A5F /* Meme.swift */,
 				843AE8C71D7FDA9F006FF580 /* Main.storyboard */,
 				843AE8CA1D7FDA9F006FF580 /* Assets.xcassets */,
 				843AE8CC1D7FDA9F006FF580 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844B5C351D80B12C00161A5F /* Meme.swift in Sources */,
 				843AE8C61D7FDA9F006FF580 /* ViewController.swift in Sources */,
 				843AE8C41D7FDA9F006FF580 /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +292,7 @@
 				843AE8D41D7FDA9F006FF580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
