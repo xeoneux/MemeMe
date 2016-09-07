@@ -114,5 +114,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return true
     }
 
+    // MARK: Meme
+
+    func generateMemedImage() -> UIImage {
+
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
+        let memedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return memedImage
+    }
+
 }
 
