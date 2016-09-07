@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     let memeTextAttributes = [
+        NSStrokeWidthAttributeName: Float(-4),
         NSStrokeColorAttributeName: UIColor.blackColor(),
-        NSForegroundColorAttributeName : UIColor.whiteColor(),
-        NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
-        NSStrokeWidthAttributeName : Float(-4)
+        NSForegroundColorAttributeName: UIColor.whiteColor(),
+        NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!
     ]
 
     @IBOutlet weak var topTextField: UITextField!
@@ -38,6 +38,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
         topTextField.delegate = self
         bottomTextField.delegate = self
+        topTextField.textAlignment = .Center
+        bottomTextField.textAlignment = .Center
         topTextField.defaultTextAttributes = memeTextAttributes
         bottomTextField.defaultTextAttributes = memeTextAttributes
 
