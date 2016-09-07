@@ -37,15 +37,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-wA-qeZ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4X-Ra-73I">
-                                <rect key="frame" x="276" y="40" width="49" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TOP" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4X-Ra-73I">
+                                <rect key="frame" x="276" y="60" width="49" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RKb-mB-Zbu">
-                                <rect key="frame" x="261" y="486" width="80" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BOTTOM" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RKb-mB-Zbu">
+                                <rect key="frame" x="260" y="486" width="80" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,15 +58,17 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cKi-GO-UbN" secondAttribute="bottom" id="TYx-Ns-jpl"/>
                             <constraint firstItem="cKi-GO-UbN" firstAttribute="top" secondItem="RKb-mB-Zbu" secondAttribute="bottom" constant="40" id="YUk-lX-21q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xhi-wA-qeZ" secondAttribute="trailing" constant="-20" id="dHl-Ot-ZMJ"/>
-                            <constraint firstItem="y4X-Ra-73I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="uFz-Bj-moL"/>
+                            <constraint firstItem="y4X-Ra-73I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="uFz-Bj-moL"/>
                             <constraint firstItem="cKi-GO-UbN" firstAttribute="top" secondItem="Xhi-wA-qeZ" secondAttribute="bottom" id="wvp-G3-GxR"/>
                             <constraint firstItem="RKb-mB-Zbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zOf-jY-bFD"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="albumButton" destination="QM1-h4-cNF" id="Llt-kQ-LKt"/>
+                        <outlet property="bottomTextField" destination="RKb-mB-Zbu" id="fRA-pk-KPd"/>
                         <outlet property="cameraButton" destination="Vbm-s2-6eN" id="DEV-3z-SGj"/>
                         <outlet property="imagePickerView" destination="Xhi-wA-qeZ" id="JuV-mB-lk7"/>
+                        <outlet property="topTextField" destination="y4X-Ra-73I" id="FFb-0K-6Y6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
