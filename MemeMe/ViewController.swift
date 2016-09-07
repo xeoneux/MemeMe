@@ -126,5 +126,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return memedImage
     }
 
+    @IBAction func save(sender: AnyObject) {
+        let topText = topTextField.text ?? "TOP"
+        let bottomText = topTextField.text ?? "BOTTOM"
+
+        let memedImage = generateMemedImage()
+        let originalImage = imagePickerView.image ?? UIImage.init()
+
+        let meme = Meme(topText: topText, bottomText: bottomText, memedImage: memedImage, originalImage: originalImage)
+    }
+
 }
 

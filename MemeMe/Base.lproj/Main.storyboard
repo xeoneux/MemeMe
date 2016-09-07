@@ -27,6 +27,12 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="s0E-XE-crj"/>
+                                    <barButtonItem title="Save" id="FTt-aa-tac">
+                                        <connections>
+                                            <action selector="save:" destination="BYZ-38-t0r" id="c1S-ha-WA5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="X38-hg-5ID"/>
                                     <barButtonItem title="Camera" id="Vbm-s2-6eN">
                                         <connections>
                                             <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="bdU-mL-5Hy"/>
