@@ -50,6 +50,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="albumButton" destination="QM1-h4-cNF" id="Llt-kQ-LKt"/>
+                        <outlet property="cameraButton" destination="Vbm-s2-6eN" id="DEV-3z-SGj"/>
                         <outlet property="imagePickerView" destination="Xhi-wA-qeZ" id="JuV-mB-lk7"/>
                     </connections>
                 </viewController>

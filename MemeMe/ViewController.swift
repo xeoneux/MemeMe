@@ -10,7 +10,15 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var albumButton: UIBarButtonItem!
+    @IBOutlet weak var cameraButton: UIBarButtonItem!
+
     @IBOutlet weak var imagePickerView: UIImageView!
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(.Camera)
+    }
 
     @IBAction func pickAnImageFromAlbum(sender: AnyObject) {
         let imagePickerController = UIImagePickerController()
