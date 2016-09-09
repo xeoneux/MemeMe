@@ -40,10 +40,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
         cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(.Camera)
 
-        topTextField.delegate = self
-        bottomTextField.delegate = self
-        topTextField.defaultTextAttributes = memeTextAttributes
-        bottomTextField.defaultTextAttributes = memeTextAttributes
+        configureTextFields(topTextField)
+        configureTextFields(bottomTextField)
 
         subscribeToKeyboardNotifications()
     }
@@ -56,18 +54,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     // MARK: Image
 
-    @IBAction func pickAnImageFromAlbum(sender: AnyObject) {
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
-        imagePickerController.sourceType = .PhotoLibrary
-        presentViewController(imagePickerController, animated: true, completion: nil)
-    }
-
-    @IBAction func pickAnImageFromCamera(sender: AnyObject) {
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
-        imagePickerController.sourceType = .Camera
-        presentViewController(imagePickerController, animated: true, completion: nil)
+    @IBAction func pickAnImage(sender: UIBarButtonItem) {
+        sender.tag == 0 ? pickAnImageFromSource(.Camera) : pickAnImageFromSource(.PhotoLibrary)
     }
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -156,6 +144,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func hideToolbars(flag: Bool) {
         topToolbar.hidden = flag
         bottomToolbar.hidden = flag
+    }
+
+    func configureTextFields(textField: UITextField) {
+        textField.delegate = self
+        textField.textAlignment = .Center
+        textField.defaultTextAttributes = memeTextAttributes
+    }
+
+    func pickAnImageFromSource(source: UIImagePickerControllerSourceType) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = source
+        presentViewController(imagePickerController, animated: true, completion: nil)
     }
 
 }

@@ -53,13 +53,13 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="s0E-XE-crj"/>
                                     <barButtonItem systemItem="camera" id="Vbm-s2-6eN">
                                         <connections>
-                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="bdU-mL-5Hy"/>
+                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="RUu-Ea-qH1"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="nNY-y4-8Fu"/>
-                                    <barButtonItem title="Album" id="QM1-h4-cNF">
+                                    <barButtonItem tag="1" title="Album" id="QM1-h4-cNF">
                                         <connections>
-                                            <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="1Gu-wR-eo4"/>
+                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="Uft-oz-34u"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="X38-hg-5ID"/>
