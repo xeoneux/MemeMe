@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RKb-mB-Zbu">
-                                <rect key="frame" x="269" y="476" width="63" height="40"/>
+                                <rect key="frame" x="269" y="496" width="63" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Bc8-0e-z7Y"/>
                                 </constraints>
@@ -58,7 +58,7 @@
                                 </items>
                             </toolbar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4X-Ra-73I">
-                                <rect key="frame" x="284" y="104" width="32" height="40"/>
+                                <rect key="frame" x="284" y="84" width="32" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2nI-Xi-ou4"/>
                                 </constraints>
@@ -75,8 +75,8 @@
                             <constraint firstItem="HAI-21-GgS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GRA-Jm-b7f"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xhi-wA-qeZ" secondAttribute="bottom" id="SH3-Ik-FUt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cKi-GO-UbN" secondAttribute="bottom" id="TYx-Ns-jpl"/>
-                            <constraint firstItem="cKi-GO-UbN" firstAttribute="top" secondItem="RKb-mB-Zbu" secondAttribute="bottom" constant="40" id="YUk-lX-21q"/>
-                            <constraint firstItem="y4X-Ra-73I" firstAttribute="top" secondItem="HAI-21-GgS" secondAttribute="bottom" constant="40" id="aT0-Ta-RJb"/>
+                            <constraint firstItem="cKi-GO-UbN" firstAttribute="top" secondItem="RKb-mB-Zbu" secondAttribute="bottom" constant="20" id="YUk-lX-21q"/>
+                            <constraint firstItem="y4X-Ra-73I" firstAttribute="top" secondItem="HAI-21-GgS" secondAttribute="bottom" constant="20" id="aT0-Ta-RJb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xhi-wA-qeZ" secondAttribute="trailing" constant="-20" id="dHl-Ot-ZMJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HAI-21-GgS" secondAttribute="trailing" constant="-20" id="jzD-tb-JNe"/>
                             <constraint firstItem="Xhi-wA-qeZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ura-wy-GKI"/>

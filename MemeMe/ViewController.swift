@@ -143,6 +143,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         hideToolbars(false)
 
         let meme = Meme(topText: topText, bottomText: bottomText, memedImage: memedImage, originalImage: originalImage)
+
+        let activityViewController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: nil)
     }
 
     // MARK: Helpers
