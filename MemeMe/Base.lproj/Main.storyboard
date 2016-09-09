@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-1442" y="1"/>
         </scene>
-        <!--Item-->
+        <!--Table-->
         <scene sceneID="gMk-mH-TEG">
             <objects>
                 <tableViewController id="xFP-u5-Sdl" customClass="TableViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Hxs-tQ-Unx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="Hxs-tQ-Unx">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hxs-tQ-Unx" id="0OT-WL-Eb5">
@@ -47,13 +47,13 @@
                             <outlet property="delegate" destination="xFP-u5-Sdl" id="pEQ-rA-7zd"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="3O9-la-PxZ"/>
+                    <tabBarItem key="tabBarItem" title="Table" id="3O9-la-PxZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVJ-U5-skk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-676" y="-331"/>
         </scene>
-        <!--Item-->
+        <!--Collection-->
         <scene sceneID="pNi-lo-zyl">
             <objects>
                 <collectionViewController id="TNu-hi-PSg" sceneMemberID="viewController">
@@ -67,7 +67,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bTo-x5-8Jr">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="bTo-x5-8Jr">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -82,7 +82,7 @@
                             <outlet property="delegate" destination="TNu-hi-PSg" id="4E4-rN-ea8"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="p7e-Vy-PQG"/>
+                    <tabBarItem key="tabBarItem" title="Collection" id="p7e-Vy-PQG"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IxP-NT-OFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
