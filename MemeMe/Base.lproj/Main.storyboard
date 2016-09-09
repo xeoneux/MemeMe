@@ -37,16 +37,8 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-wA-qeZ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4X-Ra-73I">
-                                <rect key="frame" x="284" y="60" width="32" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="2nI-Xi-ou4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RKb-mB-Zbu">
                                 <rect key="frame" x="269" y="476" width="63" height="40"/>
                                 <constraints>
@@ -58,14 +50,25 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAI-21-GgS">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="action" id="avT-qq-Ude"/>
+                                    <barButtonItem systemItem="action" id="avT-qq-Ude">
+                                        <connections>
+                                            <action selector="share:" destination="BYZ-38-t0r" id="3Cy-SE-6k0"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4X-Ra-73I">
+                                <rect key="frame" x="284" y="104" width="32" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2nI-Xi-ou4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="cKi-GO-UbN" secondAttribute="trailing" constant="-20" id="3RU-Sm-Ko0"/>
-                            <constraint firstItem="Xhi-wA-qeZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="48L-Kg-57E"/>
                             <constraint firstItem="y4X-Ra-73I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="90l-SZ-U9c"/>
                             <constraint firstItem="cKi-GO-UbN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="CkJ-UO-aOt"/>
                             <constraint firstItem="Xhi-wA-qeZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Dqe-qR-sYA"/>
@@ -73,9 +76,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xhi-wA-qeZ" secondAttribute="bottom" id="SH3-Ik-FUt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cKi-GO-UbN" secondAttribute="bottom" id="TYx-Ns-jpl"/>
                             <constraint firstItem="cKi-GO-UbN" firstAttribute="top" secondItem="RKb-mB-Zbu" secondAttribute="bottom" constant="40" id="YUk-lX-21q"/>
+                            <constraint firstItem="y4X-Ra-73I" firstAttribute="top" secondItem="HAI-21-GgS" secondAttribute="bottom" constant="40" id="aT0-Ta-RJb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xhi-wA-qeZ" secondAttribute="trailing" constant="-20" id="dHl-Ot-ZMJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HAI-21-GgS" secondAttribute="trailing" constant="-20" id="jzD-tb-JNe"/>
-                            <constraint firstItem="y4X-Ra-73I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="uFz-Bj-moL"/>
+                            <constraint firstItem="Xhi-wA-qeZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ura-wy-GKI"/>
                             <constraint firstItem="HAI-21-GgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="yur-ut-qMB"/>
                             <constraint firstItem="RKb-mB-Zbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zOf-jY-bFD"/>
                         </constraints>
@@ -85,7 +89,6 @@
                         <outlet property="bottomTextField" destination="RKb-mB-Zbu" id="fRA-pk-KPd"/>
                         <outlet property="cameraButton" destination="Vbm-s2-6eN" id="DEV-3z-SGj"/>
                         <outlet property="imagePickerView" destination="Xhi-wA-qeZ" id="JuV-mB-lk7"/>
-                        <outlet property="shareButton" destination="avT-qq-Ude" id="zFC-n1-vbj"/>
                         <outlet property="topTextField" destination="y4X-Ra-73I" id="FFb-0K-6Y6"/>
                     </connections>
                 </viewController>
