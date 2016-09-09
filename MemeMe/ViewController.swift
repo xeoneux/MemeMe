@@ -134,17 +134,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
         hideToolbars(true)
 
-        let topText = topTextField.text ?? "TOP"
-        let bottomText = topTextField.text ?? "BOTTOM"
-
         let memedImage = generateMemedImage()
         let originalImage = imagePickerView.image ?? UIImage.init()
 
         hideToolbars(false)
 
-        let meme = Meme(topText: topText, bottomText: bottomText, memedImage: memedImage, originalImage: originalImage)
-
         let activityViewController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
+
+        activityViewController.completionWithItemsHandler = {
+            if $0.1 == true {
+                let topText = self.topTextField.text ?? "TOP"
+                let bottomText = self.topTextField.text ?? "BOTTOM"
+
+                let meme = Meme(topText: topText, bottomText: bottomText, memedImage: memedImage, originalImage: originalImage)
+            }
+        }
+
         presentViewController(activityViewController, animated: true, completion: nil)
     }
 
