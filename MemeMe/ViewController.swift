@@ -127,7 +127,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return memedImage
     }
 
-    @IBAction func save(sender: AnyObject) {
+    @IBAction func share(sender: AnyObject) {
         let topText = topTextField.text ?? "TOP"
         let bottomText = topTextField.text ?? "BOTTOM"
 
