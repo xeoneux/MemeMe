@@ -87,9 +87,11 @@
                     <connections>
                         <outlet property="albumButton" destination="QM1-h4-cNF" id="Llt-kQ-LKt"/>
                         <outlet property="bottomTextField" destination="RKb-mB-Zbu" id="fRA-pk-KPd"/>
+                        <outlet property="bottomToolbar" destination="cKi-GO-UbN" id="qp3-2K-6Q2"/>
                         <outlet property="cameraButton" destination="Vbm-s2-6eN" id="DEV-3z-SGj"/>
                         <outlet property="imagePickerView" destination="Xhi-wA-qeZ" id="JuV-mB-lk7"/>
                         <outlet property="topTextField" destination="y4X-Ra-73I" id="FFb-0K-6Y6"/>
+                        <outlet property="topToolbar" destination="HAI-21-GgS" id="jhd-wB-Wxt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -17,10 +17,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!
     ]
 
+    @IBOutlet weak var topToolbar: UIToolbar!
+    @IBOutlet weak var bottomToolbar: UIToolbar!
+
     @IBOutlet weak var topTextField: UITextField!
     @IBOutlet weak var bottomTextField: UITextField!
 
-    @IBOutlet weak var shareButton: UIBarButtonItem!
+
     @IBOutlet weak var albumButton: UIBarButtonItem!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
 
@@ -128,13 +131,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func share(sender: AnyObject) {
+
+        hideToolbars(true)
+
         let topText = topTextField.text ?? "TOP"
         let bottomText = topTextField.text ?? "BOTTOM"
 
         let memedImage = generateMemedImage()
         let originalImage = imagePickerView.image ?? UIImage.init()
 
+        hideToolbars(false)
+
         let meme = Meme(topText: topText, bottomText: bottomText, memedImage: memedImage, originalImage: originalImage)
+    }
+
+    // MARK: Helpers
+
+    func hideToolbars(flag: Bool) {
+        topToolbar.hidden = flag
+        bottomToolbar.hidden = flag
     }
 
 }
