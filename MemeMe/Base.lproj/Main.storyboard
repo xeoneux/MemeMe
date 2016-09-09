@@ -9,7 +9,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="CDK-jx-zgN">
             <objects>
-                <tabBarController id="LRS-2x-tdI" sceneMemberID="viewController">
+                <tabBarController id="LRS-2x-tdI" customClass="TabBarController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="udN-bT-fX7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
