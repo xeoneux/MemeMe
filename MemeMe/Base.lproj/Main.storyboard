@@ -91,7 +91,7 @@
         <!--Collection-->
         <scene sceneID="pNi-lo-zyl">
             <objects>
-                <collectionViewController id="TNu-hi-PSg" sceneMemberID="viewController">
+                <collectionViewController id="TNu-hi-PSg" customClass="CollectionViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rne-oN-uok">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +119,9 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Collection" id="p7e-Vy-PQG"/>
                     <navigationItem key="navigationItem" id="hCX-79-8Cw"/>
+                    <connections>
+                        <outlet property="flowLayout" destination="pFY-4M-V0G" id="Rjr-dH-gJt"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IxP-NT-OFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
