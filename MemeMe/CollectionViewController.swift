@@ -18,6 +18,8 @@ class CollectionViewController: UICollectionViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+
+        self.collectionView?.reloadData()
         self.navigationItem.title = "Memes"
         self.collectionView?.backgroundColor = UIColor.whiteColor()
     }
