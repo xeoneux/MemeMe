@@ -16,6 +16,16 @@ class CollectionViewController: UICollectionViewController {
 
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
 
+    override func viewDidLoad() {
+        let space = CGFloat(3.0)
+        let width = Double(self.view.frame.size.width)
+        let dimension = CGFloat((width - (2 * Double(space))) / 3.0)
+
+        flowLayout.minimumLineSpacing = space
+        flowLayout.minimumInteritemSpacing = space
+        flowLayout.itemSize = CGSizeMake(dimension, dimension)
+    }
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
