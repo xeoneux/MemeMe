@@ -30,7 +30,7 @@ class CollectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
 
         self.collectionView?.reloadData()
-        self.navigationItem.title = "Memes"
+        self.navigationItem.title = "Sent Memes"
         self.collectionView?.backgroundColor = UIColor.whiteColor()
     }
 

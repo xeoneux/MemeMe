@@ -233,6 +233,62 @@
             </objects>
             <point key="canvasLocation" x="67" y="1"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="F4L-ck-Bsw">
+            <objects>
+                <viewController id="g6r-Wa-7nI" customClass="DetailViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G3p-Ti-Krd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lww-ff-YLv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oCa-Pq-WRq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-Yt-Hgg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                                <items>
+                                    <navigationItem title="Meme" id="akx-fl-MkQ">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="DMk-Wg-OEk">
+                                            <connections>
+                                                <action selector="shareAction:" destination="g6r-Wa-7nI" id="eVh-Ap-U7o"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="bvT-sY-w7u">
+                                            <connections>
+                                                <action selector="cancelAction:" destination="g6r-Wa-7nI" id="Vlx-5B-2lQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="USe-ID-o36">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EKe-Yt-Hgg" firstAttribute="top" secondItem="oCa-Pq-WRq" secondAttribute="topMargin" id="6iW-94-Xip"/>
+                            <constraint firstItem="USe-ID-o36" firstAttribute="centerX" secondItem="oCa-Pq-WRq" secondAttribute="centerX" id="CX0-t9-Ebl"/>
+                            <constraint firstItem="USe-ID-o36" firstAttribute="leading" secondItem="oCa-Pq-WRq" secondAttribute="leadingMargin" id="ClZ-NG-0g1"/>
+                            <constraint firstItem="Lww-ff-YLv" firstAttribute="top" secondItem="USe-ID-o36" secondAttribute="bottom" id="VVk-tz-njM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EKe-Yt-Hgg" secondAttribute="trailing" constant="-20" id="bBl-As-9eo"/>
+                            <constraint firstItem="USe-ID-o36" firstAttribute="centerY" secondItem="oCa-Pq-WRq" secondAttribute="centerY" id="cBD-Ri-2Co"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="USe-ID-o36" secondAttribute="trailing" id="hHO-rk-2ED"/>
+                            <constraint firstItem="USe-ID-o36" firstAttribute="top" secondItem="EKe-Yt-Hgg" secondAttribute="bottom" id="uyn-W1-nKa"/>
+                            <constraint firstItem="EKe-Yt-Hgg" firstAttribute="leading" secondItem="oCa-Pq-WRq" secondAttribute="leadingMargin" constant="-20" id="w0N-2r-24R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="bvT-sY-w7u" id="hsg-MG-I0g"/>
+                        <outlet property="imageView" destination="USe-ID-o36" id="SwH-1i-RMw"/>
+                        <outlet property="shareButton" destination="DMk-Wg-OEk" id="cZA-5J-3G7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbs-C4-DBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="1"/>
+        </scene>
     </scenes>
     <resources>
         <image name="collection" width="30" height="30"/>

@@ -18,7 +18,7 @@ class TableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         self.tableView.reloadData()
-        self.navigationItem.title = "Memes"
+        self.navigationItem.title = "Sent Memes"
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
