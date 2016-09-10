@@ -236,7 +236,7 @@
         <!--Detail View Controller-->
         <scene sceneID="F4L-ck-Bsw">
             <objects>
-                <viewController id="g6r-Wa-7nI" customClass="DetailViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="g6r-Wa-7nI" customClass="DetailViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G3p-Ti-Krd"/>
                         <viewControllerLayoutGuide type="bottom" id="Lww-ff-YLv"/>

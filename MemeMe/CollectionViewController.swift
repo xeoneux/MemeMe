@@ -47,4 +47,11 @@ class CollectionViewController: UICollectionViewController {
         return cell
     }
 
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let detailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
+        detailViewController.meme = self.memes[indexPath.row]
+        detailViewController.modalTransitionStyle = .CrossDissolve
+        presentViewController(detailViewController, animated: true, completion: nil)
+    }
+
 }
