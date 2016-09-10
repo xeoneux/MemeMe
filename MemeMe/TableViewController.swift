@@ -37,4 +37,8 @@ class TableViewController: UITableViewController {
         
     }
 
+    @IBAction func createMeme(sender: AnyObject) {
+        let memeEditorViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Meme Editor") as! MemeEditorViewController
+        presentViewController(memeEditorViewController, animated: true, completion: nil)
+    }
 }

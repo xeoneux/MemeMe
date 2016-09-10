@@ -9,7 +9,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="CDK-jx-zgN">
             <objects>
-                <tabBarController id="LRS-2x-tdI" customClass="TabBarController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="LRS-2x-tdI" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="udN-bT-fX7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -82,7 +82,13 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Table" id="3O9-la-PxZ"/>
-                    <navigationItem key="navigationItem" id="bvP-7u-pfv"/>
+                    <navigationItem key="navigationItem" id="bvP-7u-pfv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CU7-o7-U6d">
+                            <connections>
+                                <action selector="createMeme:" destination="xFP-u5-Sdl" id="tRB-6k-6eU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVJ-U5-skk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +124,9 @@
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Collection" id="p7e-Vy-PQG"/>
-                    <navigationItem key="navigationItem" id="hCX-79-8Cw"/>
+                    <navigationItem key="navigationItem" id="hCX-79-8Cw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sGT-hc-xaP"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="flowLayout" destination="pFY-4M-V0G" id="Rjr-dH-gJt"/>
                     </connections>
@@ -130,7 +138,7 @@
         <!--Meme Editor View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MemeEditorViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Meme Editor" id="BYZ-38-t0r" customClass="MemeEditorViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -164,6 +172,12 @@
                                     <barButtonItem systemItem="action" id="avT-qq-Ude">
                                         <connections>
                                             <action selector="share:" destination="BYZ-38-t0r" id="3Cy-SE-6k0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IRt-fm-hSk"/>
+                                    <barButtonItem title="Item" systemItem="cancel" id="jpH-Y8-XhB">
+                                        <connections>
+                                            <action selector="dismissMemeEditor:" destination="BYZ-38-t0r" id="0tc-jB-FwO"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>

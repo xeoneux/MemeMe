@@ -161,5 +161,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         presentViewController(imagePickerController, animated: true, completion: nil)
     }
 
+    @IBAction func dismissMemeEditor(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
