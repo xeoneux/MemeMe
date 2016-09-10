@@ -58,7 +58,7 @@
             </objects>
             <point key="canvasLocation" x="-1362" y="-331"/>
         </scene>
-        <!--Table-->
+        <!--Table View Controller-->
         <scene sceneID="gMk-mH-TEG">
             <objects>
                 <tableViewController id="xFP-u5-Sdl" customClass="TableViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,7 +81,7 @@
                             <outlet property="delegate" destination="xFP-u5-Sdl" id="pEQ-rA-7zd"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Table" id="3O9-la-PxZ"/>
+                    <tabBarItem key="tabBarItem" title="" image="table" id="3O9-la-PxZ"/>
                     <navigationItem key="navigationItem" id="bvP-7u-pfv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CU7-o7-U6d">
                             <connections>
@@ -94,7 +94,7 @@
             </objects>
             <point key="canvasLocation" x="-676" y="-331"/>
         </scene>
-        <!--Collection-->
+        <!--Collection View Controller-->
         <scene sceneID="pNi-lo-zyl">
             <objects>
                 <collectionViewController id="TNu-hi-PSg" customClass="CollectionViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +123,7 @@
                             <outlet property="delegate" destination="TNu-hi-PSg" id="4E4-rN-ea8"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Collection" id="p7e-Vy-PQG"/>
+                    <tabBarItem key="tabBarItem" title="" image="collection" id="p7e-Vy-PQG"/>
                     <navigationItem key="navigationItem" id="hCX-79-8Cw">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sGT-hc-xaP"/>
                     </navigationItem>
@@ -234,4 +234,8 @@
             <point key="canvasLocation" x="67" y="1"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="collection" width="30" height="30"/>
+        <image name="table" width="30" height="30"/>
+    </resources>
 </document>
