@@ -15,7 +15,6 @@
 		844B5C351D80B12C00161A5F /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B5C341D80B12C00161A5F /* Meme.swift */; };
 		84B1E0151D8319180067CA93 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1E0141D8319180067CA93 /* TableViewController.swift */; };
 		84B1E0171D8319360067CA93 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1E0161D8319360067CA93 /* CollectionViewController.swift */; };
-		84B1E0191D831EEB0067CA93 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1E0181D831EEB0067CA93 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		844B5C341D80B12C00161A5F /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		84B1E0141D8319180067CA93 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		84B1E0161D8319360067CA93 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		84B1E0181D831EEB0067CA93 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 			children = (
 				844B5C341D80B12C00161A5F /* Meme.swift */,
 				843AE8C31D7FDA9F006FF580 /* AppDelegate.swift */,
-				84B1E0181D831EEB0067CA93 /* TabBarController.swift */,
 				84B1E0141D8319180067CA93 /* TableViewController.swift */,
 				84B1E0161D8319360067CA93 /* CollectionViewController.swift */,
 				843AE8C51D7FDA9F006FF580 /* MemeEditorViewController.swift */,
@@ -150,7 +147,6 @@
 				844B5C351D80B12C00161A5F /* Meme.swift in Sources */,
 				843AE8C61D7FDA9F006FF580 /* MemeEditorViewController.swift in Sources */,
 				843AE8C41D7FDA9F006FF580 /* AppDelegate.swift in Sources */,
-				84B1E0191D831EEB0067CA93 /* TabBarController.swift in Sources */,
 				84B1E0151D8319180067CA93 /* TableViewController.swift in Sources */,
 				84B1E0171D8319360067CA93 /* CollectionViewController.swift in Sources */,
 			);
