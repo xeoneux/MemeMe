@@ -156,9 +156,9 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
 
     func configureTextFields(textField: UITextField) {
-        textField.delegate = self
-        textField.textAlignment = .Center
         textField.defaultTextAttributes = memeTextAttributes
+        textField.textAlignment = .Center
+        textField.delegate = self
     }
 
     func pickAnImageFromSource(source: UIImagePickerControllerSourceType) {
