@@ -38,8 +38,7 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let detailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
         detailViewController.meme = self.memes[indexPath.row]
-        detailViewController.modalTransitionStyle = .CrossDissolve
-        presentViewController(detailViewController, animated: true, completion: nil)
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 
     @IBAction func createMeme(sender: AnyObject) {
