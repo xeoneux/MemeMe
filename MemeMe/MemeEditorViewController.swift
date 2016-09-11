@@ -133,8 +133,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
                 let bottomText = self.topTextField.text ?? "BOTTOM"
 
                 let meme = Meme(topText: topText, bottomText: bottomText, memedImage: memedImage, originalImage: originalImage)
-                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                appDelegate.memes.append(meme)
+
+                self.save(meme)
 
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
@@ -144,6 +144,11 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
 
     // MARK: Helpers
+
+    func save(meme: Meme) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.memes.append(meme)
+    }
 
     func hideToolbars(flag: Bool) {
         topToolbar.hidden = flag
