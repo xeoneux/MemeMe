@@ -125,7 +125,11 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="" image="collection" id="p7e-Vy-PQG"/>
                     <navigationItem key="navigationItem" id="hCX-79-8Cw">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sGT-hc-xaP"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sGT-hc-xaP">
+                            <connections>
+                                <action selector="createMeme:" destination="TNu-hi-PSg" id="Y0f-i2-ti3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="flowLayout" destination="pFY-4M-V0G" id="Rjr-dH-gJt"/>
